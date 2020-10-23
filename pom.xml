@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>coordinate</groupId>
+  <artifactId>coordinate</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>coordinate</name>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+  </build>
+  <repositories>
+	<repository>
+		<id>jitpack.io</id>
+		<url>https://jitpack.io</url>
+	</repository>
+	    <repository>
+        <id>crashdemons-repo</id>
+        <url>https://meme.tips/java-repos/</url>
+    </repository>
+</repositories>
+<dependencies>
+    <dependency>
+        <groupId>org.shininet.bukkit</groupId>
+        <artifactId>PlayerHeads-api</artifactId>
+        <version>5.2.12-SNAPSHOT</version>
+    </dependency>
+</dependencies>
+</project>
