@@ -7,10 +7,7 @@ At the moment, not much. Using writable books you can write simple commands such
 ## Crafting
 Craft a computer like this:
 
-|GLASS|GLASS|GLASS|
-|----|----|----|
-|STONE|REDSTONE|STONE|
-|STONE|STONE|STONE|
+![img](https://i.imgur.com/8uOYMTs.png)
 
 Then you can use it by right-clicking. You can put a writable book with commands written in it, then you can close the inventory. When the inventory closes, your commands will be interpreted automatically.
 
