@@ -21,6 +21,7 @@ import org.bukkit.inventory.meta.BookMeta;
 import org.bukkit.inventory.meta.ItemMeta;
 import ga.saverio.coordinate.Interpreter;
 import ga.saverio.coordinate.Interpreter.Token;
+import net.md_5.bungee.api.ChatColor;
 
 public class ComputerGui implements Listener {
     private final Inventory inv;
@@ -100,7 +101,7 @@ public class ComputerGui implements Listener {
     	if (book.getType() == Material.WRITABLE_BOOK) {
     		BookMeta bookData = (BookMeta) book.getItemMeta();
     		Player p = (Player) e.getPlayer();
-    		Bukkit.getServer().broadcastMessage("[CraftBASIC] [Interprete fiero attivato]");
+    		Bukkit.getServer().broadcastMessage(ChatColor.GREEN + "[CraftBASIC] [Interprete fiero attivato]");
     		String data = "";
     		for (String page : bookData.getPages()) {
     			data += page;	
@@ -108,7 +109,7 @@ public class ComputerGui implements Listener {
 			Interpreter interpreter = new Interpreter();
 			List<Token> list = interpreter.tokenize(data);
 			for (Token tok : list) {
-				Bukkit.getServer().broadcastMessage("body: " + tok.text + " type:" + tok.type.toString());
+				Bukkit.getServer().broadcastMessage(ChatColor.YELLOW + "[CraftBASIC Debugger] " + ChatColor.WHITE + "body: " + tok.text + " type:" + tok.type.toString());
 			}
 			interpreter.parser(list);
     		
